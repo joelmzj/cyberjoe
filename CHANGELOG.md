@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/joelmzj/cyberjoe/compare/v1.4.0...v1.5.0) (2026-10-21)
+
+### ✨ New Features
+
+* método ajustado ([d1f7fc2](https://github.com/joelmzj/cyberjoe/commit/d1f7fc2d60ddbebdeaa7adede318b5b48010d08e))
+
 ## [1.4.0](https://github.com/joelmzj/cyberjoe/compare/v1.3.0...v1.4.0) (2026-10-21)
 
 ### ✨ New Features

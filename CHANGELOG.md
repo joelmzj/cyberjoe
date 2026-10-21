@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/joelmzj/cyberjoe/compare/v1.2.0...v1.3.0) (2026-10-21)
+
+### ✨ New Features
+
+* sistema cambiado ([d379eaa](https://github.com/joelmzj/cyberjoe/commit/d379eaa4ebb094e603b5057018562d9aae073c4c))
+
 ## [1.2.0](https://github.com/joelmzj/cyberjoe/compare/v1.1.0...v1.2.0) (2026-10-21)
 
 ### ✨ New Features

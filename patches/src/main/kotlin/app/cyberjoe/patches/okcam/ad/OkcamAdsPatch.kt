@@ -2,12 +2,12 @@ package app.cyberjoe.patches.okcam.ad
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patcher.patch.methodFingerprint
+import app.morphe.patcher.methodFingerprint
 
 @Suppress("unused")
 val removeOkcamAdsPatch = bytecodePatch(
     name = "Remove O-KAM Ads",
-    description = "Test: Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads.",
+    description = "Test Patch: Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads.",
     default = true
 ) {
     compatibleWith("com.okcam.ookcam")
@@ -34,7 +34,8 @@ val removeOkcamAdsPatch = bytecodePatch(
 
     execute {
         // FASE 1: Neutralizar la inicialización del SDK (Fake success)
-        val initMethod = ampsInitFingerprint.result?.method
+        // Usamos mutableMethod en lugar de method
+        val initMethod = ampsInitFingerprint.result?.mutableMethod
         if (initMethod != null) {
             initMethod.addInstructions(
                 0,
@@ -50,7 +51,8 @@ val removeOkcamAdsPatch = bytecodePatch(
         }
 
         // FASE 2: Interceptar los anuncios en el puente de Flutter
-        val onMethodCallMethod = onMethodCallFingerprint.result?.method
+        // Usamos mutableMethod en lugar de method
+        val onMethodCallMethod = onMethodCallFingerprint.result?.mutableMethod
         if (onMethodCallMethod != null) {
             onMethodCallMethod.addInstructions(
                 0,

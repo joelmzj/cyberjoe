@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/joelmzj/cyberjoe/compare/v1.3.0...v1.4.0) (2026-10-21)
+
+### ✨ New Features
+
+* parche ajustado ([a55b495](https://github.com/joelmzj/cyberjoe/commit/a55b4956adea70aefcecaea3605ab8b5d4fa86fd))
+
 ## [1.3.0](https://github.com/joelmzj/cyberjoe/compare/v1.2.0...v1.3.0) (2026-10-21)
 
 ### ✨ New Features

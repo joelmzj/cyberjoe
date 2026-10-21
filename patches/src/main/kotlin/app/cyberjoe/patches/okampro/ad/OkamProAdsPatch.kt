@@ -3,7 +3,7 @@ package app.cyberjoe.patches.okampro.ad
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-
+// Ok
 // Fingerprint que busca el manejador de Flutter que abre la pantalla del anuncio
 private object SplashMethodCallFingerprint : Fingerprint(
     returnType = "V",

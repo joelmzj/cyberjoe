@@ -7,7 +7,7 @@ import app.morphe.patcher.patch.methodFingerprint
 @Suppress("unused")
 val removeOkcamAdsPatch = bytecodePatch(
     name = "Remove O-KAM Ads",
-    description = "Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads.",
+    description = "Test: Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads.",
     default = true
 ) {
     compatibleWith("com.okcam.ookcam")

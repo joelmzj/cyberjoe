@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-21T21:07:32",
-  "description": "## [1.1.0](https://github.com/joelmzj/cyberjoe/compare/v1.0.0...v1.1.0) (2026-10-21)\n\n### ✨ New Features\n\n* Add patch to remove O-KAM Pro adsfeat ([bafdf8b](https://github.com/joelmzj/cyberjoe/commit/bafdf8bc70b40675ae6edef94f21317f9d0abcaa))",
-  "download_url": "https://github.com/joelmzj/cyberjoe/releases/download/v1.1.0/patches-1.1.0.mpp",
+  "created_at": "2026-10-21T21:12:35",
+  "description": "## [1.2.0](https://github.com/joelmzj/cyberjoe/compare/v1.1.0...v1.2.0) (2026-10-21)\n\n### ✨ New Features\n\n* parche de prueba ([8d29ebd](https://github.com/joelmzj/cyberjoe/commit/8d29ebd74512b67aa4296567c9d6a763b60dfd2d))",
+  "download_url": "https://github.com/joelmzj/cyberjoe/releases/download/v1.2.0/patches-1.2.0.mpp",
   "signature_download_url": "",
-  "version": "1.1.0"
+  "version": "1.2.0"
 }

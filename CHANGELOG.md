@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/joelmzj/cyberjoe/compare/v1.1.0...v1.2.0) (2026-10-21)
+
+### ✨ New Features
+
+* parche de prueba ([8d29ebd](https://github.com/joelmzj/cyberjoe/commit/8d29ebd74512b67aa4296567c9d6a763b60dfd2d))
+
 ## [1.1.0](https://github.com/joelmzj/cyberjoe/compare/v1.0.0...v1.1.0) (2026-10-21)
 
 ### ✨ New Features

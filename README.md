@@ -15,14 +15,14 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/joelmzj/cyberjoe/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+> **[v1.1.0](https://github.com/joelmzj/cyberjoe/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
 <details open>
-<summary>📦 com.okcam.ookcam&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<summary>📦 com.okampro.oksmart&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Remove O-KAM Ads](#remove-o-kam-ads) | Test patch: Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads. |  |
+| [Remove O-KAM Pro Ads](#remove-o-kam-pro-ads) | Blocks SplashAdActivity and prevents the Flutter engine from launching the splash ad. |  |
 
 </details>
 

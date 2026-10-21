@@ -1,15 +1,15 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "patches": [
     {
-      "name": "Remove O-KAM Ads",
-      "description": "Test patch: Blocks AdScope SDK initialization and intercepts Flutter MethodChannel to prevent Interstitial, Native, and Splash ads.",
+      "name": "Remove O-KAM Pro Ads",
+      "description": "Blocks SplashAdActivity and prevents the Flutter engine from launching the splash ad.",
       "default": true,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "com.okcam.ookcam",
+          "packageName": "com.okampro.oksmart",
           "name": null,
           "description": null,
           "apkFileType": null,

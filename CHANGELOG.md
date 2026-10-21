@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/joelmzj/cyberjoe/compare/v1.0.0...v1.1.0) (2026-10-21)
+
+### ✨ New Features
+
+* Add patch to remove O-KAM Pro adsfeat ([bafdf8b](https://github.com/joelmzj/cyberjoe/commit/bafdf8bc70b40675ae6edef94f21317f9d0abcaa))
+
 ## 1.0.0 (2026-10-21)
 
 ### ✨ New Features

@@ -3,15 +3,11 @@ package app.cyberjoe.patches.okampro.ad
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-// Ok
-// Fingerprint que busca el manejador de Flutter que abre la pantalla del anuncio
+
+// Fingerprint usando el log único de la app para evitar problemas con R8
 private object SplashMethodCallFingerprint : Fingerprint(
     returnType = "V",
-    parameters = listOf(
-        "Lio/flutter/plugin/common/MethodCall;",
-        "Lio/flutter/plugin/common/MethodChannel\$Result;"
-    ),
-    strings = listOf("jumpToActivity")
+    strings = listOf("kakaopay============url==>")
 )
 
 @Suppress("unused")
@@ -20,33 +16,33 @@ val removeOkamProAdsPatch = bytecodePatch(
     description = "Blocks SplashAdActivity and prevents the Flutter engine from launching the splash ad.",
     default = true
 ) {
-    // IMPORTANTE: Cambiamos el paquete al nuevo
     compatibleWith("com.okampro.oksmart")
 
     execute {
-        // Interceptamos el MethodChannel de Flutter para evitar que se abra SplashAdActivity
+        // Inyectamos el código directamente en el método que contiene ese Log
         SplashMethodCallFingerprint.method.addInstructions(
             0,
             """
-                # Obtener nombre del método de Flutter
-                iget-object v0, p1, Lio/flutter/plugin/common/MethodCall;->method:Ljava/lang/String;
+                const-string v0, "Morphe-AdDebug"
+                const-string v1, "-> Intercepted MethodChannel Call"
+                invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
                 
-                # Comprobar si es "jumpToActivity"
+                # Leer el nombre del método (f893a es el campo de MethodCall en R8)
+                iget-object v0, p1, Lp028b8/C1564j;->f893a:Ljava/lang/String;
                 const-string v1, "jumpToActivity"
                 invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
                 move-result v1
                 if-eqz v1, :allow
                 
-                # Si es jumpToActivity, lo bloqueamos
+                # Bloquear y devolver true (mo369a es el método success en R8)
                 const-string v0, "Morphe-AdDebug"
                 const-string v1, "-> Blocked Splash Ad (jumpToActivity)"
                 invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
                 
-                # Devolvemos true para simular éxito y evitar el Intent
                 const/4 v0, 0x1
                 invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
                 move-result-object v0
-                invoke-interface {p2, v0}, Lio/flutter/plugin/common/MethodChannel${'$'}Result;->success(Ljava/lang/Object;)V
+                invoke-interface {p2, v0}, Lp028b8/C1565k${'$'}d;->mo369a(Ljava/lang/Object;)V
                 return-void
                 
                 :allow

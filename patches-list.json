@@ -1,10 +1,10 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "patches": [
     {
       "name": "Remove O-KAM Pro Ads",
-      "description": "Blocks SplashAdActivity and prevents the Flutter engine from launching the splash ad.",
+      "description": "Blocks SplashAdActivity, disables TopOn initialization, and prevents native ad requests.",
       "default": true,
       "category": null,
       "compatiblePackages": [

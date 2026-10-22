@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/joelmzj/cyberjoe/compare/v1.5.0...v1.6.0) (2026-10-22)
+
+### ✨ New Features
+
+* nuevo filtro de parches implementado ([76ce051](https://github.com/joelmzj/cyberjoe/commit/76ce051a48874627737723eeded1ed29eec2f37a))
+
 ## [1.5.0](https://github.com/joelmzj/cyberjoe/compare/v1.4.0...v1.5.0) (2026-10-21)
 
 ### ✨ New Features

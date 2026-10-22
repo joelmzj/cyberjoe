@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-21T22:21:52",
-  "description": "## [1.5.0](https://github.com/joelmzj/cyberjoe/compare/v1.4.0...v1.5.0) (2026-10-21)\n\n### ✨ New Features\n\n* método ajustado ([d1f7fc2](https://github.com/joelmzj/cyberjoe/commit/d1f7fc2d60ddbebdeaa7adede318b5b48010d08e))",
-  "download_url": "https://github.com/joelmzj/cyberjoe/releases/download/v1.5.0/patches-1.5.0.mpp",
+  "created_at": "2026-10-22T15:01:39",
+  "description": "## [1.6.0](https://github.com/joelmzj/cyberjoe/compare/v1.5.0...v1.6.0) (2026-10-22)\n\n### ✨ New Features\n\n* nuevo filtro de parches implementado ([76ce051](https://github.com/joelmzj/cyberjoe/commit/76ce051a48874627737723eeded1ed29eec2f37a))",
+  "download_url": "https://github.com/joelmzj/cyberjoe/releases/download/v1.6.0/patches-1.6.0.mpp",
   "signature_download_url": "",
-  "version": "1.5.0"
+  "version": "1.6.0"
 }

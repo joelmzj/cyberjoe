@@ -14,9 +14,12 @@ val okamProSignatureBypassPatch = rawResourcePatch(
     execute {
         // Ruta de la librería nativa
         val libPath = "lib/arm64-v8a/libOKSMARTJIAMI.so"
-        val libFile = context.get(libPath)
         
-        if (!libFile.exists()) {
+        // El método correcto es get(ruta, true) para obtener el File editable
+        val libFile = try {
+            get(libPath, true)
+        } catch (e: Exception) {
+            // Si la librería no existe (ej. en un APK sin splits), el parche no hace nada
             return@execute
         }
 
@@ -29,11 +32,9 @@ val okamProSignatureBypassPatch = rawResourcePatch(
         )
 
         // 2. Instrucciones ARM64 para forzar el retorno a TRUE (1) y salir
-        // mov w0, #1 (0x52800020 en little-endian es 20 00 80 52)
-        // ret (0xD65F03C0 en little-endian es C0 03 5F D6)
         val bypassInstructions = byteArrayOf(
-            0x20, 0x00, 0x80.toByte(), 0x52, 
-            0xC0.toByte(), 0x03, 0x5F, 0xD6.toByte()
+            0x20, 0x00, 0x80.toByte(), 0x52, // mov w0, #1
+            0xC0.toByte(), 0x03, 0x5F, 0xD6.toByte()  // ret
         )
 
         val index = indexOf(bytes, originalPattern)

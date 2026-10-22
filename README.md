@@ -15,13 +15,14 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.6.0](https://github.com/joelmzj/cyberjoe/releases/tag/v1.6.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+> **[v1.7.0](https://github.com/joelmzj/cyberjoe/releases/tag/v1.7.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
-<summary>📦 com.okampro.oksmart&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<summary>📦 com.okampro.oksmart&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Bypass O-KAM Pro Signature Check](#bypass-o-kam-pro-signature-check) | Patches libOKSMARTJIAMI.so to force the native checkSignature function to always return true. |  |
 | [Remove O-KAM Pro Ads](#remove-o-kam-pro-ads) | Blocks SplashAdActivity, disables TopOn initialization, and prevents native ad requests. |  |
 
 </details>

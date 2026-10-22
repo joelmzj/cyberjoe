@@ -1,3 +1,13 @@
+## [1.7.0](https://github.com/joelmzj/cyberjoe/compare/v1.6.0...v1.7.0) (2026-10-22)
+
+### 🐛 Bug Fixes
+
+* Fix library file access and improve bypass logic ([b454d8e](https://github.com/joelmzj/cyberjoe/commit/b454d8e7c58e9525467f028ee8158bb3748c3bac))
+
+### ✨ New Features
+
+* nuevo parche ([d5c1359](https://github.com/joelmzj/cyberjoe/commit/d5c1359c60e0f2319b77d1477a05ce4e67e617dc))
+
 ## [1.6.0](https://github.com/joelmzj/cyberjoe/compare/v1.5.0...v1.6.0) (2026-10-22)
 
 ### ✨ New Features
